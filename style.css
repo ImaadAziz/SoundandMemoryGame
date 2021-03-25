@@ -1,0 +1,135 @@
+/* CSS files add styling rules to your content */
+
+body {
+  font-family: helvetica, arial, sans-serif;
+  margin: 2em;
+  background-color: #2f61cc;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg stroke='%23000' stroke-width='66.7' stroke-opacity='0.05' %3E%3Ccircle fill='%232f61cc' cx='0' cy='0' r='1800'/%3E%3Ccircle fill='%232e5bc1' cx='0' cy='0' r='1700'/%3E%3Ccircle fill='%232d55b6' cx='0' cy='0' r='1600'/%3E%3Ccircle fill='%232c50ab' cx='0' cy='0' r='1500'/%3E%3Ccircle fill='%232a4aa0' cx='0' cy='0' r='1400'/%3E%3Ccircle fill='%23284595' cx='0' cy='0' r='1300'/%3E%3Ccircle fill='%23263f8b' cx='0' cy='0' r='1200'/%3E%3Ccircle fill='%23243a81' cx='0' cy='0' r='1100'/%3E%3Ccircle fill='%23223576' cx='0' cy='0' r='1000'/%3E%3Ccircle fill='%231f306d' cx='0' cy='0' r='900'/%3E%3Ccircle fill='%231d2b63' cx='0' cy='0' r='800'/%3E%3Ccircle fill='%231a2659' cx='0' cy='0' r='700'/%3E%3Ccircle fill='%23172150' cx='0' cy='0' r='600'/%3E%3Ccircle fill='%23141c46' cx='0' cy='0' r='500'/%3E%3Ccircle fill='%2311183d' cx='0' cy='0' r='400'/%3E%3Ccircle fill='%230e1335' cx='0' cy='0' r='300'/%3E%3Ccircle fill='%230c0d2c' cx='0' cy='0' r='200'/%3E%3Ccircle fill='%23090524' cx='0' cy='0' r='100'/%3E%3C/g%3E%3C/svg%3E");
+  background-attachment: fixed;
+  background-size: cover;
+  color: white;
+  display: grid;
+  height: 100vh;
+  place-items: center;
+}
+
+h1 {
+  font-family: verdana, arial, sans-serif
+}
+
+button {
+  padding: 10px;
+  border-radius: 10px
+}
+
+#gameButtonArea > button {
+  width: 200px;
+  height: 200px;
+  margin: 2px;
+}
+
+.hidden {
+  display: none;
+}
+
+#button1 {
+    background: lightgreen;
+}
+
+#button2 {
+    background: lightblue;
+}
+
+#button3 {
+    background: pink;
+}
+
+#button4 {
+    background: lightyellow;
+}
+
+#button5 {
+    background: #9F6BA0;
+}
+
+#button6 {
+    background: #E5C687
+}
+
+#button1:active, #button1.lit {
+    background:green;
+}
+
+#button2:active, #button2.lit {
+    background: blue;
+}
+
+#button3:active, #button3.lit {
+    background: red;
+}
+
+#button4:active, #button4.lit {
+    background: yellow;
+}
+
+#button5:active, #button5.lit {
+    background: #4B304B
+}
+
+#button6:active, #button6.lit {
+    background: #543E12
+}
+
+
+.base-timer {
+  position: relative;
+  width: 300px;
+  height: 300px;
+}
+
+.base-timer__svg {
+  transform: scaleX(-1);
+}
+
+.base-timer__circle {
+  fill: none;
+  stroke: none;
+}
+
+.base-timer__path-elapsed {
+  stroke-width: 7px;
+  stroke: grey;
+}
+
+.base-timer__path-remaining {
+  stroke-width: 7px;
+  stroke-linecap: round;
+  transform: rotate(90deg);
+  transform-origin: center;
+  transition: 1s linear all;
+  fill-rule: nonzero;
+  stroke: currentColor;
+}
+
+.base-timer__path-remaining.green {
+  color: rgb(65, 184, 131);
+}
+
+.base-timer__path-remaining.orange {
+  color: orange;
+}
+
+.base-timer__path-remaining.red {
+  color: red;
+}
+
+.base-timer__label {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 48px;
+}
